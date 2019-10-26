@@ -5,9 +5,9 @@
 * Python 3.5 
 * tf-1.9
 
-##Getting started
+## Getting started
 
-###Preparing data
+### Preparing data
 Download MNIST dataset and extract to directory ``` ./MNIST_data```.
 ```shell
 ./MNIST_data
@@ -17,35 +17,35 @@ Download MNIST dataset and extract to directory ``` ./MNIST_data```.
     train-labels-idx1-ubyte.gz
 ```
 
-###Training
+### Training
 
-####run SGD without momentum.
+#### run SGD without momentum.
 ```shell
 python neural_network_raw.py \
 	--optimizer_name sgd --learning_rate 0.001 
 ```
 
-####run Adam without momentum.
+#### run Adam without momentum.
 ```shell
 python neural_network_raw.py \
 	--optimizer_name adam --learning_rate 0.001 \
 	--beta1 0.0 --beta2 0.999   
 ```
-####run AMSGrad without momentum.
+#### run AMSGrad without momentum.
 ```shell
 python neural_network_raw.py \
 	--optimizer_name amsgrad --learning_rate 0.001 \
 	--beta1 0.0 --beta2 0.999   
 ```
 
-####run AdaShift with max operation and without momentum.
+#### run AdaShift with max operation and without momentum.
 ```shell
 python neural_network_raw.py \
 	--optimizer_name adashift --learning_rate 0.01 \
 	--beta1 0.0 --beta2 0.999  --pred_g_op max --keep_num 10
 ```
 
-####run AdaShift without specific operation and without momentum.
+#### run AdaShift without specific operation and without momentum.
 ```shell
 python neural_network_raw.py \
 	--optimizer_name adashift --learning_rate 0.001 \
