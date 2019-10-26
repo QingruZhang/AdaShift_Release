@@ -1,13 +1,13 @@
 # Resnet on Cifar10
 
-##Requirements
+## Requirements
 
 * Python 3.5
 * tf-1.9
 
 
-##Getting started
-###Preparing data
+## Getting started
+### Preparing data
 Download MINST dataset and extract to directory ``` ./data/mnist```.
 ```shell
 ./MNIST_data
@@ -17,7 +17,7 @@ Download MINST dataset and extract to directory ``` ./data/mnist```.
     train-labels-idx1-ubyte.gz
 ```
 
-###Run and Plot
+### Run and Plot
 ```shell
 python mnist_logistic.py  
 ```
