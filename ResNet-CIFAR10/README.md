@@ -1,27 +1,27 @@
 # Resnet on Cifar10
 
-##Requirements
+## Requirements
 
 * Python 3.5
 * tf-1.9
 * keras 2.2.2
 
-##Getting started
-###Training
-####run Adam.
+## Getting started
+### Training
+#### run Adam.
 ```shell
 python main.py \
 	--optimizer_name adam --lr 0.001 \
 	--beta1 0.9 --beta2 0.999   
 ```
-####run AMSGrad.
+#### run AMSGrad.
 ```shell
 python main.py \
 	--optimizer_name amsgrad --lr 0.001 \
 	--beta1 0.9 --beta2 0.999   
 ```
 
-####run AdaShift with max operation.
+#### run AdaShift with max operation.
 ```shell
 python main.py \
 	--optimizer_name adashift --lr 0.01 \
