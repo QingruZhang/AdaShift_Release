@@ -1,13 +1,13 @@
 # Densenet on Tiny-imagenet
 
-##Requirements
+## Requirements
 
 * Python 3.5
 * TF-1.9
 
-##Getting started
+## Getting started
 
-###Preparing data
+### Preparing data
 Download tiny-imagenet dataset from [here](https://drive.google.com/open?id=1fmn8Gnbt1IenxXTS66CyRSrlwkTZWBJn) and put it under directory ```./dataset```.
 ```
 ./dataset
@@ -18,7 +18,7 @@ Download tiny-imagenet dataset from [here](https://drive.google.com/open?id=1fmn
         tiny-imagenet_val_label_matrix.npy
 ```
 
-###Training
+### Training
 adam optimizer:
 ```shell
 python run_dense_net.py \
