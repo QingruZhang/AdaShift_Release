@@ -5,9 +5,9 @@
 * Python 3.5 
 * tf-1.9
 
-##Getting started
+## Getting started
 
-###Preparing data
+### Preparing data
 Download MNIST dataset and extract to directory ``` ./MNIST_data```.
 ```shell
 ./MNIST_data
@@ -17,7 +17,7 @@ Download MNIST dataset and extract to directory ``` ./MNIST_data```.
     train-labels-idx1-ubyte.gz
 ```
 
-###Training
+### Training
 
 ```shell
 python Densenet_MNIST.py
