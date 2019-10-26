@@ -5,9 +5,9 @@
 * Python 3
 
 
-###Training And Plot
+### Training And Plot
 
-####run Stochastic Online Problem
+#### run Stochastic Online Problem
 ```shell
 python stochastic_counter.py
 ```
