@@ -1,24 +1,24 @@
 # WGAN-GP
 
-##Requirements
+## Requirements
 * Python 3.5
 * tf-1.5
 
-##Training
+## Training
 In this experiment, we set beta1 = 0, beta2 = 0.999 and operation on previous gradient is ```max```. Then, the best learning rate for each optimizer is choosen as blow.
 
-####run Adam.
+#### run Adam.
 ```shell
 python gan_realdata4.py \
 	--optimizer_name adam --learning_rate 0.00001 
 ```
-####run AMSGrad.
+#### run AMSGrad.
 ```shell
 python gan_realdata4.py \
 	--optimizer_name amsgrad --learning_rate 0.00001 
 ```
 
-####run AdaShift with max operation.
+#### run AdaShift with max operation.
 ```shell
 python gan_realdata4.py \
 	--optimizer_name adashift --learning_rate 0.0002 
