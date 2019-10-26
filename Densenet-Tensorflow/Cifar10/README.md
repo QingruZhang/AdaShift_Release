@@ -1,13 +1,13 @@
 # Densenet on Cifar10
 
-##Requirements
+## Requirements
 
 * Python 3.5
 * tf-1.9
 
-##Getting started
+## Getting started
 
-###Preparing data
+### Preparing data
 Download Cifar10 dataset and extract to directory ``` ./cifar-10-batches-py```.
 ```shell
 cifar-10-batches-py
@@ -21,27 +21,27 @@ cifar-10-batches-py
 └── test_batch
 ```
 
-###Training
-####run SGD.
+### Training
+#### run SGD.
 ```shell
 python Densenet_Cifar10.py \
 	--optimizer_name sgd --init_learning_rate 0.001 
 ```
 
-####run Adam.
+#### run Adam.
 ```shell
 python Densenet_Cifar10.py \
 	--optimizer_name adam --init_learning_rate 0.001 \
 	--beta1 0.9 --beta2 0.999   
 ```
-####run AMSGrad.
+#### run AMSGrad.
 ```shell
 python Densenet_Cifar10.py \
 	--optimizer_name amsgrad --init_learning_rate 0.001 \
 	--beta1 0.9 --beta2 0.999   
 ```
 
-####run AdaShift with max operation.
+#### run AdaShift with max operation.
 ```shell
 python Densenet_Cifar10.py \
 	--optimizer_name adashift --init_learning_rate 0.01 \
